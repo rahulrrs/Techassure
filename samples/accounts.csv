@@ -1,0 +1,4 @@
+username,employee_id,system_name,is_active,mfa_enabled,privilege_level,password_last_changed,last_login
+achen,E1001,Okta,true,true,Standard,2026-06-01,2026-06-29
+jpatel,E1002,Okta,true,false,Standard,2026-03-01,2026-06-10
+srivera-admin,E1003,AWS,true,false,Admin,2025-12-15,2026-06-25

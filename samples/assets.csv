@@ -1,0 +1,4 @@
+asset_tag,hostname,owner_employee_id,department,criticality,patch_due_date,last_patch_date
+LAP-1001,eng-lap-01,E1001,Engineering,Medium,2026-07-20,2026-06-30
+SRV-2001,fin-db-01,E1002,Finance,Critical,2026-06-01,2026-04-20
+SRV-3001,ops-idp-01,E1003,IT Operations,Critical,2026-06-15,2026-05-10

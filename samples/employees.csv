@@ -1,0 +1,4 @@
+employee_id,full_name,department,manager,employment_status,termination_date
+E1001,Avery Chen,Engineering,Morgan Shah,Active,
+E1002,Jordan Patel,Finance,Riley Brooks,Terminated,2026-05-15
+E1003,Sam Rivera,IT Operations,Morgan Shah,Active,
