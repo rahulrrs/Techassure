@@ -17,6 +17,8 @@
     "recharts": "latest"
   },
   "devDependencies": {
+    "@types/react": "latest",
+    "@types/react-dom": "latest",
     "autoprefixer": "latest",
     "postcss": "latest",
     "tailwindcss": "3.4.17",
