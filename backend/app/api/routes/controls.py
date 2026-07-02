@@ -1,4 +1,4 @@
-from fastapi import APIRouter, Depends
+from fastapi import APIRouter, Depends, HTTPException
 from sqlalchemy import select
 from sqlalchemy.orm import Session
 
@@ -34,7 +34,10 @@ def create_control(payload: ControlCreate, db: Session = Depends(get_db)) -> Con
 
 @router.post("/{control_id}/run", response_model=TestResultRead)
 def run_one(control_id: int, db: Session = Depends(get_db)) -> ControlTestResult:
-    return run_control(db, db.get(Control, control_id))
+    control = db.get(Control, control_id)
+    if not control:
+        raise HTTPException(status_code=404, detail="Control not found")
+    return run_control(db, control)
 
 
 @router.post("/run-all", response_model=list[TestResultRead])
